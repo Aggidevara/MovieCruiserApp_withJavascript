@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div id="root"> </div>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- <script>
+        const element=React.createElement('h2',null,'Hello');
+        ReactDOM.render(element,document.getElementById('root'));
+    </script> -->
+    <script type="text/babel">
+        // const element=<h2>Hello,JSX</h2>;
+        // ReactDOM.render(element,document.getElementById('root'));
+        // const Greeter=function () {
+        //     return <h3>Hello, World</h3>
+        // }
+        // ReactDOM.render(<p><Greeter/><Greeter/><Greeter/></p>,document.getElementById('root'));
+        // const Greeter=function (props) {
+        //     return <p>
+        //             <h3>{props.children}</h3>
+        //             {props.greet}, {props.name}</p>
+        // }
+        const Greeter=function (props) {
+             return <p>
+                     <h3>{props.children}</h3>
+                     {props.greet}, {props.name}</p>
+         }
+        // const Greeter=function(props){
+        //     return    React.createElement('p',null),[
+        //     React.createElement('h3',props.children),
+        //     React.createElement('p',null,${props.greet},${props.name})
+        // ]
+        // }
+        const dict={
+            greet:"hello",
+            name:"React"
+        }
+        ReactDOM.render(<p>
+                        <Greeter {...dict}>ReactJS</Greeter>
+                        <Greeter greet="hii"name="JSX">JSX</Greeter>
+                        </p>,document.getElementById('root'));
+        //without jsx
+        // ReactDOM.render('p',null),[
+        //     React.createElement(Greeter,dict1,'JSX'),
+        //     React.createElement(Greeter,)
+        // ]
+    </script>
+</body>
+</html>

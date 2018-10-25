@@ -1,0 +1,37 @@
+1)JAvascript Library
+
+yes: becoz it uses 2 npms 1)react and 2)react-dom
+react is same for all platforms but react-dom is platform dependent 
+it provides the view part,state  of an applictaion
+
+
+Design Ui interface with reusable components
+**component design
+
+1-way data binding
+(views and listeners)
+
+Doesn't use more boilerplates == loc is less 
+less boilerplate means development is fast 
+advantage of more boilerplates id components can be testable
+
+Design multipage application with reactJs == Isomorphic code (write in one environment and run in different environments)
+
+multipage applictaion  vs singlepage application
+the page is being rendered on the server side when a client requests in multipage
+in singlepage application it gives the page fastly
+we can use Isomorphic to load the first page quickly
+
+what is reactJs known for?
+comparing with 
+-angular
+-vue
+-flutter
+
+JSX
+
+
+
+
+
+
